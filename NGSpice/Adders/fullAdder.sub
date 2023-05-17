@@ -1,0 +1,12 @@
+* Full Adder
+
+.include ../Gates/or.sub
+.include halfAdder.sub
+
+.subckt fulladder sum carry A B Cin Vdd Gnd
+
+xhalfadder1 temp1 temp2 A B Vdd Gnd halfadder
+xhalfadder2 sum temp3 temp1 Cin Vdd Gnd halfadder
+xor1 carry temp2 temp3 Vdd Gnd or
+
+.ends

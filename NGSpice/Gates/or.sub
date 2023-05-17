@@ -1,0 +1,17 @@
+* 2 Input OR Gate
+
+.subckt or output A B Vdd Gnd
+
+* NOR Gate
+
+MP1 temp A Vdd Vdd CMOSP W={width_P} L={LAMBDA}
+MP2 nor B temp Vdd CMOSP W={width_P} L={LAMBDA}
+MN1 nor A Gnd Gnd CMOSN W={width_N} L={LAMBDA}
+MN2 nor B Gnd Gnd CMOSN W={width_N} L={LAMBDA}
+
+* NOT Gate (Inverter)
+
+MP3 output nor Vdd Vdd CMOSP W={width_P} L={LAMBDA}
+MN3 output nor Gnd Gnd CMOSN W={width_N} L={LAMBDA}
+
+.ends

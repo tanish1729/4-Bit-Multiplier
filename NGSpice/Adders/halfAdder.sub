@@ -1,0 +1,11 @@
+* Half Adder
+
+.include ../Gates/and.sub
+.include ../Gates/xor.sub
+
+.subckt halfadder sum carry A B Vdd Gnd
+
+xxor1 sum A B Vdd Gnd xor
+xand1 carry A B Vdd Gnd and
+
+.ends

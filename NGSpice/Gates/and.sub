@@ -1,0 +1,17 @@
+* 2 Input AND Gate
+
+.subckt and output A B Vdd Gnd
+
+* NAND Gate
+
+MP1 nand A Vdd Vdd CMOSP W={width_P} L={LAMBDA}
+MP2 nand B Vdd Vdd CMOSP W={width_P} L={LAMBDA}
+MN1 nand A temp Gnd CMOSN W={width_N} L={LAMBDA}
+MN2 temp B Gnd Gnd CMOSN W={width_N} L={LAMBDA}
+
+* NOT Gate (Inverter)
+
+MP3 output nand Vdd Vdd CMOSP W={width_P} L={LAMBDA}
+MN3 output nand Gnd Gnd CMOSN W={width_N} L={LAMBDA}
+
+.ends

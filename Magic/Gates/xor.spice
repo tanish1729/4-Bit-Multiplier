@@ -1,0 +1,28 @@
+* SPICE3 file created from xor.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 a_66_6# in1 out w_32_0# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1001 out in2 a_46_6# w_32_0# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 a_46_6# a_15_n12# vdd w_32_0# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1003 out in1 a_46_n62# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 a_15_n62# in2 vdd w_2_n50# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 a_46_n62# in2 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 a_15_n12# in1 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1007 a_15_n12# in1 vdd w_2_0# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1008 gnd a_15_n12# a_66_n62# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1009 a_66_n62# a_15_n62# out Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 a_15_n62# in2 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1011 vdd a_15_n62# a_66_6# w_32_0# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0

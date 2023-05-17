@@ -1,0 +1,10 @@
+* NOT Gate
+
+.subckt not output A Vdd Gnd
+
+* NOT Gate
+
+MP1 output A Vdd Vdd CMOSP W={width_P} L={LAMBDA}
+MN1 output A Gnd Gnd CMOSN W={width_N} L={LAMBDA}
+
+.ends
